@@ -10,8 +10,14 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="src/_preflight.css" />
-    
+
     <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- JS Modules -->
     <script type="module" src="src/main.ts" async></script>
@@ -19,7 +25,20 @@
   </head>
   <body>
     <main>
-     <h1 class="sr-only"></h1>
+      <h1 class="sr-only"></h1>
+      <div class="copywrite">
+        <h2 class="copywrite__heading">
+          Reliable, efficient delivery
+          <strong class="copywrite__heading--emphasize"
+            >Powered by Technology</strong
+          >
+        </h2>
+        <p class="copywrite__subheading">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+      <pug src="src/cards.pug" />
     </main>
   </body>
 </html>
